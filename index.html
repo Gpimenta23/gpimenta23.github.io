@@ -62,6 +62,10 @@
             background-color: #3B82F6;
             box-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
         }
+        .hero-card {
+            border-top: 1px solid rgba(59, 130, 246, 0.3);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -93,15 +97,24 @@
 
     <main class="pt-24">
         <!-- Hero Section -->
-        <section id="hero" class="container mx-auto px-6 py-20 text-center flex flex-col items-center">
-            <!-- CORREÇÃO FINAL: Link da imagem fornecido pelo usuário -->
-            <img src="https://i.imgur.com/353e7BA.jpeg" alt="Foto de Gustavo Pimenta de Oliveira" class="w-48 h-48 rounded-full mb-6 border-4 border-blue-500 shadow-lg neon-border object-cover">
-            <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight neon-text">Gustavo Pimenta de Oliveira</h2>
-            <p class="text-xl md:text-2xl text-blue-400 mt-4">Business Intelligence, IA & Growth</p>
-            <div class="mt-8 flex justify-center space-x-4">
-                <a href="mailto:gustavo.pimenta23@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors duration-300"><i class="fas fa-envelope text-2xl"></i></a>
-                <a href="tel:+5524988668216" class="text-gray-300 hover:text-blue-400 transition-colors duration-300"><i class="fas fa-phone text-2xl"></i></a>
-                <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
+        <section id="hero" class="container mx-auto px-6 py-24 flex items-center justify-center min-h-[70vh]">
+            <div class="glass-effect hero-card p-8 md:p-12 rounded-lg text-center max-w-3xl w-full">
+                <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight neon-text">Gustavo Pimenta de Oliveira</h2>
+                <p class="text-xl md:text-2xl text-blue-400 mt-4">Business Intelligence, IA & Growth</p>
+                <div class="mt-10 border-t border-gray-700 pt-8 flex justify-center items-center gap-4 md:gap-8">
+                    <a href="mailto:gustavo.pimenta23@gmail.com" class="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                        <i class="fas fa-envelope text-2xl md:mr-2"></i>
+                        <span class="hidden md:inline">E-mail</span>
+                    </a>
+                    <a href="tel:+5524988668216" class="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                        <i class="fas fa-phone text-2xl md:mr-2"></i>
+                        <span class="hidden md:inline">Telefone</span>
+                    </a>
+                    <a href="#" class="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                        <i class="fab fa-linkedin text-2xl md:mr-2"></i>
+                        <span class="hidden md:inline">LinkedIn</span>
+                    </a>
+                </div>
             </div>
         </section>
 
